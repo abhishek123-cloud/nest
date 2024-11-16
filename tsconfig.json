@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",                  // Set the output language level
+      "module": "CommonJS",                 // Module system for Node.js
+      "moduleResolution": "node",           // Resolve modules similar to Node.js
+      "lib": ["ES2020"],                    // Use modern JS features
+      "strict": true,                       // Enable all strict type-checking options
+      "skipLibCheck": true,                 // Skip type checking of declaration files (improves build time)
+      "esModuleInterop": true,              // Allows default imports for CommonJS modules
+      "experimentalDecorators": true,       // Enable decorators (used in NestJS)
+      "emitDecoratorMetadata": true,        // Enable metadata reflection (required by NestJS)
+      "resolveJsonModule": true,            // Allow importing of JSON files
+      "outDir": "./dist",                   // Output directory for compiled JavaScript
+      "baseUrl": "./src",                   // Base directory for non-relative module imports
+      "rootDir": "./src",                   // Root directory for TypeScript files
+      "declaration": false,                 // Disable generating .d.ts files (optional)
+      "removeComments": true                // Remove comments in the output JavaScript
+    },
+    "include": [
+      "src/**/*.ts"                          // Include all TypeScript files in the src folder
+    ],
+    "exclude": [
+      "node_modules",                        // Exclude node_modules directory
+      "dist"                                 // Exclude the dist directory (generated code)
+    ]
+  }
